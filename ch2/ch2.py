@@ -9,6 +9,7 @@
 # print(x)
 # print(type(x))
 #
+
 # x = "I can't run"
 # print(x)
 # x = "This is a statements.\
