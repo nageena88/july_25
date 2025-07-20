@@ -16,6 +16,7 @@
 # This is third statements test objects."
 #
 # print(x)
+
 #
 # x = 12.56
 # print(type(x))
