@@ -1,4 +1,4 @@
-st = "this is string data."
+# st = "this is string data."
 # print(type(st))
 # print(st)
 # print(st[0])
@@ -55,30 +55,30 @@ methods = [
     # "isspace",
     # "istitle",
     # "isupper",
-    "join",
+    # "join",
     # "ljust",
-    "lower",
-    "lstrip",
+    # "lower",
+    # "lstrip",
     "maketrans",
-    "partition",
+    # "partition",
     "removeprefix",
     "removesuffix",
-    "replace",
+    # "replace",
     # "rfind",
     # "rindex",
     # "rjust",
-    "rpartition",
-    "rsplit",
-    "rstrip",
-    "split",
-    "splitlines",
+    # "rpartition",
+    # "rsplit",
+    # "rstrip",
+    # "split",
+    # "splitlines",
     # "startswith",
-    "strip",
-    "swapcase",
-    "title",
+    # "strip",
+    # "swapcase",
+    # "title",
     "translate",
-    "upper",
-    "zfill",
+    # "upper",
+    # "zfill",
 ]
 
 # print(len(methods))
@@ -102,7 +102,7 @@ methods = [
 
 # res = st.encode()
 # print(res)
-print(st)
+# print(st)
 
 # "endswith",
 # res = st.endswith("data.")
@@ -126,10 +126,85 @@ print(st)
 # st1 = "My name is {1} and my age is {0}".format(name, age)
 # print(st1)
 # "format_map",
-person = {"name": "Ram", "age": 24, "salary": 34000}
-st2 = "My name is {name} and my age is {age}".format_map(person)
-print(st2)
+# person = {"name": "Ram", "age": 24, "salary": 34000}
+# st2 = "My name is {name} and my age is {age}".format_map(person)
+# print(st2)
 
 # "index",
 # res = st.index("This")
 # print(res)
+
+# "strip",
+# st = "   this is string data.   "
+# st = st.strip()
+# print(st)
+
+# lstrip
+# print(st.lstrip().replace("   ", "___"))
+
+# rstrip
+# print(st.rstrip().replace("   ", "___"))
+
+# "swapcase",
+# st = "Hello Python"
+# print(st.swapcase())
+
+# "title",
+# st = "hello python"
+# print(st.title())
+
+# # "upper",
+# print(st.upper())
+
+# # "zfill",
+# print(st.zfill(20))
+
+st = "This is string data."
+# lower,
+# print(st.lower())
+# # split,
+# print(st.split())
+# st = "this-is-string-data."
+# print(st.split("-"))
+# rsplit,
+# print(st.rsplit("-"))
+
+# splitlines,
+# st = """This is string data.\nthis is example of splitline.\nthis is third line."""
+
+# print(st.splitlines())
+
+
+# partition
+# st = "This is string data."
+# print(st.partition("is"))
+# rpartition
+# print(st.rpartition("is"))
+
+# st = "x+y = 20"
+# val = st.partition("=")
+# formula = val[0].strip()
+# print(formula)
+# value = val[-1].strip()
+# print(value)
+
+
+st = "This is string data."
+# split_data = st.split()
+# print(split_data)
+# str1 = "Ram ".join(split_data)
+# print(str1)
+# # print(st.replace(" ", "-"))
+
+# remove_prefix = st.removeprefix("This is ")
+# print(remove_prefix)
+
+# remove_suffix = st.removesuffix(" data.")
+# print(remove_suffix)
+
+
+maketrans_table = str.maketrans("aeiou", "12345")
+print(maketrans_table)
+
+res = st.translate(maketrans_table)
+print(res)
