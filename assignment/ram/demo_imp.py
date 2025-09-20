@@ -45,3 +45,11 @@
 
 # x = float(input("Enter a number: "))
 # print(type(x))
+
+
+# a = [1, 2, 3, 1, 2, 5, 6]
+# print(a)
+# a = set(a)
+
+# for x in a:
+#     print(x)
